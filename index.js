@@ -61,6 +61,10 @@ let x=10;
 let y=x++;
 console.log(y)
 
+console.log(' ');
+console.log('---------------------------------------------------');
+console.log(' ');
+console.log(2**4)
 
 let hour = 19;
 if ( hour >= 6 && hour < 12){
@@ -91,3 +95,35 @@ if(role === 'guest'){
 } else if (role === 'moderator'){
     console.log('You are a moderator');
 } else console.log('Unknown user');
+
+
+//// about loop
+
+// for loop
+for (let i = 0; i <5; i++){
+    console.log('Test!!!', i);
+}
+
+for (let i = 5; i >= 1; i--){
+    if (i % 2 !== 0) console.log('odd numbers with for loop: ', i);
+}
+
+// while loop
+
+// let i = 0;
+// while (i <= 5){
+//     if (i % 2 !== 0) console.log('odd numbers with while loop: ', i);
+//     i++;
+// }
+
+// do-while loop
+// the difference between  "do-while" and "while" is that in "Do While" statement are execute at least once.
+//because the condition  of execution is checked after executing the block code.
+
+
+
+let i = 9;
+do{
+    if (i % 2 !== 0) console.log('odd numbers with while loop: ', i);
+    i++;
+} while (i <= 5);
