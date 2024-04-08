@@ -1,19 +1,19 @@
 
 
-let person = {
-    name: 'Igor',
-    age: 33,
-    club: null
-};
+// let person = {
+//     name: 'Igor',
+//     age: 33,
+//     club: null
+// };
 
-person.age = 34;
-person['name'] = 'Cordeiro';
-const selection = 'club';
-person[selection] = 'Vitória';
+// person.age = 34;
+// person['name'] = 'Cordeiro';
+// const selection = 'club';
+// person[selection] = 'Vitória';
 
-console.log(person.age);
-console.log(person.name);
-console.log(person.club);
+// console.log(person.age);
+// console.log(person.name);
+// console.log(person.club);
 
 
 
@@ -128,5 +128,28 @@ do{
     i++;
 } while (i <= 5);
 
-// Infinite loops
+// Infinite loops can crash your browser or make your computer very slow
+// while  (i > 1){
+//     console.log(i);
+// }
 
+
+// for-in loop is used to iterate over the properties of an object
+const person = {
+    name: 'Igor',
+    age: 30
+};
+for (let key in person) {
+    console.log(key + ': ' + person[key]);
+};
+
+const colors = ['red', 'blue', 'green'];
+for (let index in colors){
+    console.log(index + ': ' + colors[index]);
+};
+
+// for-of  loop is used to iterate over the elements or itens in an array
+
+for(let color of colors){
+    console.log(color);
+};
