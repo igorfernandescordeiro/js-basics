@@ -127,3 +127,6 @@ do{
     if (i % 2 !== 0) console.log('odd numbers with while loop: ', i);
     i++;
 } while (i <= 5);
+
+// Infinite loops
+
