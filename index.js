@@ -70,3 +70,24 @@ if ( hour >= 6 && hour < 12){
 }else{
     console.log('Good evening!');
 }
+
+let role = '';
+
+switch (role) {
+    case 'guest':
+        console.log('You are a guest');
+        break;
+    
+    case 'moderator':
+        console.log('You are a moderator');
+        break;
+
+    default:
+        console.log('Unknown user');
+}
+
+if(role === 'guest'){
+    console.log('You are a guest');
+} else if (role === 'moderator'){
+    console.log('You are a moderator');
+} else console.log('Unknown user');
