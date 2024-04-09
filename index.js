@@ -122,11 +122,11 @@ for (let i = 5; i >= 1; i--){
 
 
 
-let i = 9;
-do{
-    if (i % 2 !== 0) console.log('odd numbers with while loop: ', i);
-    i++;
-} while (i <= 5);
+    // let i = 9;
+    // do{
+    //     if (i % 2 !== 0) console.log('odd numbers with while loop: ', i);
+    //     i++;
+    // } while (i <= 5);
 
 // Infinite loops can crash your browser or make your computer very slow
 // while  (i > 1){
@@ -152,4 +152,17 @@ for (let index in colors){
 
 for(let color of colors){
     console.log(color);
+};
+
+// break and continue 
+
+let i = 0; 
+while (i <= 10){
+    // if(i === 5) break;
+    if(i % 2 === 0){
+        i++;
+        continue;
+    }
+    console.log(i);
+    i++;
 };
