@@ -200,3 +200,14 @@ return (number1 > number2) ? number1 : number2;
 
 console.log(MaximumValueThree(100,1011));
 
+
+//exercise - return if is landscape or portrait 
+
+function isLandscape(width, height){
+    return (width > height);
+};
+
+console.log(isLandscape(111,11));
+
+
+
