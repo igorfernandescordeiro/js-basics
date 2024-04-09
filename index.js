@@ -156,13 +156,47 @@ for(let color of colors){
 
 // break and continue 
 
-let i = 0; 
-while (i <= 10){
-    // if(i === 5) break;
-    if(i % 2 === 0){
+    let i = 0; 
+    while (i <= 10){
+        // if(i === 5) break;
+        if(i % 2 === 0){
+            i++;
+            continue;
+        }
+        console.log(i);
         i++;
-        continue;
+    };
+
+//exercise maximum value
+
+function MaximumValue(number1, number2){
+    if (number1 > number2){
+        console.log(`This is the greater number: ${number1}`);
+    }else if(number2 > number1){
+        console.log(`This is the greater number: ${number2}`);
+    }else {
+        console.log('They are equalsss')
     }
-    console.log(i);
-    i++;
 };
+MaximumValue(1022,120);
+
+function MaximumValueTwo(number1, number2){
+    if (number1 > number2){
+        return number1;
+    }else if(number2 > number1){
+        return number2;
+    }else {
+        return 'They are equals';
+    }
+};
+
+console.log(MaximumValueTwo(33,33));
+
+// if the condition is simple just to know what number is greater using Conditional operator(ternary)
+
+function MaximumValueThree(number1, number2){
+return (number1 > number2) ? number1 : number2;
+};
+
+console.log(MaximumValueThree(100,1011));
+
