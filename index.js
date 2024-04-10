@@ -236,3 +236,65 @@ function fizzBuzz(input){
 
 
 
+// Exercise Demerit Points
+//speed limit = 70 
+// if the speed is under or equal to 70 get OK message
+// for every 5 kilometers above 70 the driver will get 1 point
+//if gets more then 12 points so the license suspended
+//tips: prefer not to use direct numbers on the validations like (speed > 80) instead that use a constant wich should be const speedLimit (speed > speedLimit)
+
+
+console.log('');
+console.log('Exercise speed limit MY RESOLVE');
+console.log('');
+
+
+let results = checkSpeed(130);
+console.log(results);
+
+function checkSpeed(speed){
+    const speedLimit = 70;
+    const kmPerPoint = 5;
+
+    if(speed > speedLimit){
+        const points = Math.floor((speed - speedLimit) / kmPerPoint);        
+
+        if(points < 1){
+            return 'Ok';
+          }else if (points >= 1 && points <= 12){
+            return points;
+          }else{
+            return 'License suspended';
+          }
+    };
+
+    if(speed <= speedLimit)
+    return 'Ok';  
+};
+
+
+console.log('');
+console.log('Exercise speed limit PROFESSOR RESPONSE');
+console.log('');
+
+
+checkSpeed2(130);
+
+function checkSpeed2(speed) { 
+    const speedLimit = 70;
+    const kmPerPoint = 5;
+
+    if (speed < speedLimit + kmPerPoint){
+        console.log('OK');
+        return;
+    }
+
+    const points = Math.floor((speed - speedLimit) / kmPerPoint)
+    if (points >= 12)
+        console.log('Liscense Suspended');
+    else
+    console.log('Points', points);
+}
+
+
+
