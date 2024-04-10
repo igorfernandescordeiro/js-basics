@@ -210,4 +210,29 @@ function isLandscape(width, height){
 console.log(isLandscape(111,11));
 
 
+//exercise fizzbuzz
+// I created almost correct but the order of the if`s was wrong and I had to first validate if it was a number
+// then if the number was divisible by 3 and 5 than the rest of the problem
+const output = fizzBuzz(false);
+console.log(output);
+
+function fizzBuzz(input){
+    if (typeof input !== 'number')
+        return NaN;
+    
+    if((input % 3 === 0) && (input % 5 === 0))
+        return 'FizzBuzz';
+
+    if (input % 3 === 0)
+        return 'Fizz';
+
+    if(input % 5 === 0)
+        return 'Buzz';
+
+    if((input % 3 !== 0) || (input % 5 !== 0))
+        return input;
+   
+};
+
+
 
