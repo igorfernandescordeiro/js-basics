@@ -297,4 +297,27 @@ function checkSpeed2(speed) {
 }
 
 
+// exercise even and odd
+//
 
+showNumbers(10);
+showNumbersTwo(5);
+// my way
+function showNumbers(limit){
+    let i = 0;
+    while(i <= limit){
+    if(i % 2 === 0){
+        console.log(i, ' EVEN');
+    }else console.log(i, ' ODD')
+    i++;
+    }
+};
+
+// professors way
+function showNumbersTwo(limit){
+    for (let i = 0; i <= limit; i++){
+        const message = (i % 2 === 0) ? 'even' : 'odd';
+        console.log(i, message);
+    }
+    
+}
