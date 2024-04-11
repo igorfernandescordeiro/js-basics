@@ -321,3 +321,38 @@ function showNumbersTwo(limit){
     }
     
 }
+
+
+//exercise
+//takes an array and return a number of truthy elements in this array
+// list of falsy in JS: undefined, null, '', false, 0, NaN
+
+console.log('');
+console.log('Exercise count Truthy');
+console.log('');
+
+
+
+const array = [4, 6, null, 7, 'igor', '', 3, NaN]
+console.log(countTruthy(array));
+
+function countTruthy(array) {
+    let quantity = 0;
+    for(let item of array){
+        if(item){
+            quantity++
+        }
+    }
+    return quantity;
+};
+
+// node command to watch the code on console: node --watch index.js 
+
+//exercise
+
+console.log('');
+console.log('Exercise String Properties');
+console.log('');
+
+
+
