@@ -333,18 +333,18 @@ console.log('');
 
 
 
-const array = [4, 6, null, 7, 'igor', '', 3, NaN]
-console.log(countTruthy(array));
+// const array = [4, 6, null, 7, 'igor', '', 3, NaN]
+// console.log(countTruthy(array));
 
-function countTruthy(array) {
-    let quantity = 0;
-    for(let item of array){
-        if(item){
-            quantity++
-        }
-    }
-    return quantity;
-};
+// function countTruthy(array) {
+//     let quantity = 0;
+//     for(let item of array){
+//         if(item){
+//             quantity++
+//         }
+//     }
+//     return quantity;
+// };
 
 // node command to watch the code on console: node --watch index.js 
 
@@ -413,5 +413,44 @@ console.log('');
 console.log('Exercise Grade');
 console.log('');
 
+// Calculate a grade of a student
+// Calculate the Average
+// 0-59: F
+// 60-69: D
+// 70-79: C
+// 80-89: B
+// 90-100: A
 
+const array = [90, 90, 90];
+
+console.log(calculateGrade(array));
+
+function calculateGrade(marks) {
+    const avarage = calculateAvarage(marks);
+
+    if (avarage >= 0 && avarage <= 59) 
+        return 'F';
+    if (avarage >= 60 && avarage <= 69) 
+        return 'D';
+    if (avarage >= 70 && avarage <= 79) 
+        return 'C';
+    if (avarage >= 80 && avarage <= 89) 
+        return 'B';
+    if (avarage >= 90 && avarage <= 100) 
+        return 'A';
+};
+
+function calculateAvarage(array) {
+    let sum = 0;
+    for (const value of array) {
+        sum += value;
+    }
+    return sum/array.length;
+};
+
+
+//exercise
+console.log('');
+console.log('Exercise Stars');
+console.log('');
 
