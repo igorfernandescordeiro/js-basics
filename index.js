@@ -453,4 +453,23 @@ function calculateAvarage(array) {
 console.log('');
 console.log('Exercise Stars');
 console.log('');
+// show the number of the row with *
+
+// My solution was for the first time a little easier to understand compared to the professor`s
+
+showStars(5);
+
+function showStars(rows) {
+    let stars = '';
+    for (let i = 0; i < rows; i++){
+        stars += "*";
+        console.log(stars)
+    }
+};
+
+
+//exercise
+console.log('');
+console.log('Exercise Prime Numbers');
+console.log('');
 
