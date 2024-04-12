@@ -354,5 +354,27 @@ console.log('');
 console.log('Exercise String Properties');
 console.log('');
 
+const movie = {
+    title: 'a',
+    releaseYear: 2018,
+    rating: 4.5,
+    director: 'b'
+};
+showProperties(movie);
+
+function showProperties(obj) {
+
+    for(let key in obj){
+        if(typeof obj[key] === 'string' ){
+            console.log(key + ' : ' + obj[key]) 
+        }
+    };
+};
+
+
+//exercise
+console.log('');
+console.log('Exercise Sum of multiples 3');
+console.log('');
 
 
