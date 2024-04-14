@@ -473,3 +473,20 @@ console.log('');
 console.log('Exercise Prime Numbers');
 console.log('');
 
+showPrimes(4);
+
+function showPrimes(limit) {
+    for(let number = 2 ; number <= limit; number++) {
+        if (isPrime(number)) console.log('Prime number: ' + number);
+    };
+};
+
+function isPrime(number) {
+    for(let factor = 2; factor < number; factor++){
+        if(number % factor === 0){
+            return false;
+        }
+    }
+    return true;
+};
+
