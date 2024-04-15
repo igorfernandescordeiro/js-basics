@@ -31,7 +31,8 @@ console.log('');
 // we changed the keyvalues of the previous object to make the example of factory function easier to understand
 // if the key and value are the same we can  remove the value and simply add the key.
 
-
+//camel notation: oneTwoThreeFour
+// pascal notation: OneTwoThreeFour
 function createCircle(radius) {
     return {
         radius,
@@ -51,4 +52,19 @@ console.log(circule2);
 //Constructor Functions 
 console.log('');
 console.log('Learning Constructor Functions');
+console.log('');
+
+function Circle(radius) {
+    this.radius = radius;
+    this.draw = function(){
+        console.log('draw');
+    }
+};
+
+const circle3 = new Circle(1);
+console.log(circle3);
+
+//Dynamic Nature of Objects
+console.log('');
+console.log('Learning Dynamic Nature of Objects');
 console.log('');
