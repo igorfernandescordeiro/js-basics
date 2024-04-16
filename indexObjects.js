@@ -68,3 +68,19 @@ console.log(circle3);
 console.log('');
 console.log('Learning Dynamic Nature of Objects');
 console.log('');
+
+const circle4 = {
+    radius: 1
+};
+
+circle4.color = 'blue';
+circle4.draw = function() {};
+
+delete circle4.color;
+
+console.log('circle4: ', circle4)
+
+//Constructor Property
+console.log('');
+console.log('Learning Constructor Property');
+console.log('');
