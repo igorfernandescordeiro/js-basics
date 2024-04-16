@@ -111,3 +111,21 @@ const circle5 = new Circle2(1);
 console.log('a', circle5.constructor);
 
 console.log('a', circle6.constructor);
+
+
+console.log('');
+console.log('Learning Functions are Objects');
+console.log('');
+
+// here is just to explain exacly the name of the lecture that in JavaScript Functions are objects
+// if we get an function and use the command '.' after the function we will see methods and properties
+
+console.log(Circle.name);
+console.log(Circle.length);
+console.log(Circle.constructor);
+
+
+console.log('');
+console.log('Learning Value vs. Reference Types');
+console.log('');
+
