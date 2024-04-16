@@ -80,7 +80,34 @@ delete circle4.color;
 
 console.log('circle4: ', circle4)
 
+
+
+
 //Constructor Property
 console.log('');
 console.log('Learning Constructor Property');
 console.log('');
+
+
+function createCircle2(radius) { // factory function
+    return {
+        radius,
+        draw(){
+            console.log('draw');
+        }
+    };
+};
+const circle6 = createCircle2(1);
+
+function Circle2(radius) { //constructor function
+    this.radius = radius;
+    this.draw = function(){
+        console.log('draw');
+    }
+};
+
+const circle5 = new Circle2(1);
+
+console.log('a', circle5.constructor);
+
+console.log('a', circle6.constructor);
