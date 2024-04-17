@@ -129,3 +129,43 @@ console.log('');
 console.log('Learning Value vs. Reference Types');
 console.log('');
 
+//it is necessary to understand that in the primitive type are independet variables so when manipulated it changes the value of the variable not the place in the memory
+//and the object type use a reference in the memory and they are manipulated, what is saved in the variable is the address of the memory where this value was stored
+
+let x = 10; // primitive type
+let y = x; // primitive type
+
+x = 20;
+console.log('primitive type: ',x);
+console.log('primitive type: ',y);
+
+
+let x1 = {value: 10}; // object type
+let y1 = x1;
+
+x1.value = 20;
+console.log(x1);
+console.log(y1);
+
+
+
+//Primitives are copied by their value and Objects are copied by their reference, 
+//it means that with an Object we set a specific location at the memory of the computer and use the reference of this location in the memory to store the object
+// and the primitve are store in the variable itself
+
+/* 
+value types or primitve types are:
+Number
+String
+Boolean
+Symbol
+undefined
+null
+
+
+
+Reference types or object types are:
+Object
+Function
+Array
+*/
