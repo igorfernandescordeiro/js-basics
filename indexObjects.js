@@ -201,3 +201,37 @@ if('radius' in circle7) {
 console.log('');
 console.log('Learning Cloning an Object');
 console.log('');
+
+const circle8 = {
+    radius: 1,
+    draw() {
+        console.log('draw');
+    }
+};
+
+// this is an old way to copy an object
+// const another = {};
+
+// for (let key in circle8){
+//     another[key] = circle8[key];
+// }
+
+// this is how modern JS.
+//we call the Oject.assign and in the first argument we pass an empty object or existing one and for the second argument we select the one or more that 
+// we want to copy. We can combine object with this assign method
+
+// const another = Object.assign({
+//     color: 'gray'
+// }, circle8)
+
+//there is another way simpler to clone an object
+// this one with this 3 dots ... we spread an object and assign it to a variable which will be the new clone object
+
+const another = { ...circle8 }
+
+console.log('another: ',another);
+
+
+console.log('');
+console.log('Learning Garbage Collection');
+console.log('');
