@@ -169,3 +169,35 @@ Object
 Function
 Array
 */
+
+console.log('');
+console.log('Learning Enumerating Properties of an Object');
+console.log('');
+
+const circle7 = {
+    radius: 1,
+    draw() {
+        console.log('draw');
+    }
+};
+
+for (let key in circle7){
+    console.log(key, circle7[key]);
+}
+
+for (let key of Object.keys(circle7)){
+console.log(key);
+}
+
+for (let entry of Object.entries(circle7)){
+    console.log(entry);
+    }
+// we can use IN to see if there is a property or method existis in an object
+if('radius' in circle7) {
+    console.log('YES');
+}
+
+
+console.log('');
+console.log('Learning Cloning an Object');
+console.log('');
