@@ -235,3 +235,12 @@ console.log('another: ',another);
 console.log('');
 console.log('Learning Garbage Collection');
 console.log('');
+
+// in javascript we do not have to  allocate or deallocate memory for the objects/variables that we create, javascript itself does that with the Garbage Collector.
+// this garbage collector find this variables/objects that are not in use and deallocate the memory automatically. 
+
+
+console.log('');
+console.log('Learning Math');
+console.log('');
+
