@@ -252,3 +252,18 @@ console.log('');
 console.log('Learning String');
 console.log('');
 
+//String primiteve
+const message = 'This is my first message';
+console.log(message.length);
+console.log(message[3]);
+console.log(message.includes('my'));
+console.log(message.includes('mys'));
+console.log(message.startsWith('This'));
+console.log(message.startsWith('this'));
+console.log('type of message: ', typeof(message));
+
+
+
+//String object
+const another2 = new String('hi');
+console.log('Type of another2: ', typeof(another2));
