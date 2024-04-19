@@ -291,3 +291,17 @@ And you can any exprassion like, how much is 2 + 2 = ${2+2}`;
 console.log(message3);
 
 
+
+console.log('');
+console.log('Learning Date object');
+console.log('');
+
+
+const dateNow = new Date();
+const date1 = new Date('May 11 2019 9:22');
+const date2 = new Date(2018, 0, 11, 9, 22);
+
+dateNow.setFullYear(2025);
+
+console.log(dateNow.toDateString());
+console.log(date1.toDateString());
