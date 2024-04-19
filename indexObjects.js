@@ -244,3 +244,11 @@ console.log('');
 console.log('Learning Math');
 console.log('');
 
+// in javascript we have the object Math that has properties and methods for mathematical constants and function. not a function object.
+//to see all the constants and function for this object we can take a look in this site: https://www.udemy.com/course/javascript-basics-for-beginners/learn/lecture/10688870#overview
+
+
+console.log('');
+console.log('Learning String');
+console.log('');
+
