@@ -252,7 +252,7 @@ console.log('');
 console.log('Learning String');
 console.log('');
 
-//String primiteve
+//String primitive
 const message = 'This is my first message';
 console.log(message.length);
 console.log(message[3]);
@@ -267,3 +267,27 @@ console.log('type of message: ', typeof(message));
 //String object
 const another2 = new String('hi');
 console.log('Type of another2: ', typeof(another2));
+
+
+console.log('');
+console.log('Learning Template Literals');
+console.log('');
+
+
+const message2 = 'This is my\n second message!';
+console.log(message2);
+
+// Object {} literals
+// Bolean true, false literals
+// String '', "" literals
+// Template literals ``
+
+const name = 'Igor';
+
+const message3 = `This is my 
+third 'message'. 
+What about you ${name}?.
+And you can any exprassion like, how much is 2 + 2 = ${2+2}`;
+console.log(message3);
+
+
