@@ -27,3 +27,33 @@ function showAddress2(address2) {
 
 showAddress2(address);
 showAddress2(address2);
+
+//exercise
+console.log('');
+console.log('Exercise Factory and Constructor Function');
+console.log('');
+
+function address3(street, city, zipCode){ // Factory Function
+   return{
+    street,
+    city,
+    zipCode
+    }; 
+};
+
+function Address(street, city, zipCode){ // Constructor Function
+    this.street = street;
+    this.city = city;
+    this.zipCode = zipCode;
+};
+
+const factoryAddress = address3('aa', 'bb', 'cc');
+const constructorAddress = new Address('aaa', 'bbb', 'ccc');
+
+console.log(factoryAddress);
+console.log(constructorAddress);
+
+
+console.log('');
+console.log('Exercise Object Equality');
+console.log('');
