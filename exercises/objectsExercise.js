@@ -53,7 +53,7 @@ const constructorAddress = new Address('aaa', 'bbb', 'ccc');
 console.log(factoryAddress);
 console.log(constructorAddress);
 
-
+//exercise
 console.log('');
 console.log('Exercise Object Equality');
 console.log('');
@@ -86,7 +86,35 @@ function areSame(address4, address5){
 console.log(areSame(address4, address5)); // in this case they are not point to the same object in the memory
 console.log(areSame(address4, address6)); // but in this case they are, because address6 receive this value. address4 and 6 were created as a new object so they get their own address in memory.
 
-
+//exercise
 console.log('');
 console.log('Exercise Blog Post Object');
+console.log('');
+
+// create a object that should have
+// title
+// body
+// author
+// views
+// comments
+//      (author, body)
+// isLive, true or false
+
+const blogPost = {
+    title: 'h1',
+    body: 'everything here',
+    author: 'Igor Cordeiro',
+    views: 10,
+    comments: [
+        {author: 'Cordeiro Igor', body: 'text here'},
+        {author: 'Cordeiro Igor', body: 'text here'}
+    ],
+    isLive: true
+}
+
+console.log(blogPost)
+
+//exercise
+console.log('');
+console.log('Exercise Constructor Functions');
 console.log('');
