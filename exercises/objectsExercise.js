@@ -118,3 +118,21 @@ console.log(blogPost)
 console.log('');
 console.log('Exercise Constructor Functions');
 console.log('');
+
+function Post(title, body, author){
+    this.title = title;
+    this.body = body;
+    this.author = author;
+    this.views = 0;
+    this.comments = [];
+    this.isLive = false;
+}
+
+let post = new Post('a', 'b', 'c');
+
+console.log(post);
+
+//exercise
+console.log('');
+console.log('Exercise Price Range');
+console.log('');
