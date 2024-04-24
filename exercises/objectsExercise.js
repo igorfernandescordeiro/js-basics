@@ -136,3 +136,32 @@ console.log(post);
 console.log('');
 console.log('Exercise Price Range');
 console.log('');
+
+// create an array of objects, each object called a price range object. only 3, and think what properties each object should have.
+
+const priceRanges = [
+    {
+        type: 'Inexpensive',
+        symbol: '$',
+        itens: { 
+            item: 'a',
+            item: 'b'
+        }
+    },
+    {
+        type: 'Moderate',
+        symbol: '$$',
+        itens: { 
+            item: 'a',
+            item: 'b'
+        }
+    },
+    {
+        type: 'Pricey',
+        symbol: '$$$',
+        itens: { 
+            item: 'a',
+            item: 'b'
+        }
+    }
+];
