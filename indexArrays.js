@@ -52,3 +52,27 @@ console.log(numbers1.indexOf(1, 2));
 //
 //FINDING ELEMENTS (Reference Types)
 //
+
+
+const courses = [
+    {id: 1, name: 'a'},
+    {id: 2, name: 'b'},
+];
+// the find returns the first element that matches this criateria
+const course = courses.find(function(course) {
+    return course.name === 'a';
+});
+// the findIndex return the index of the element that it founds or return -1 if it not found
+const courseIndex = courses.findIndex(function(course) {
+    return course.name === 'b';
+});
+
+
+console.log('Course: ', course);
+console.log('Index Course: ', courseIndex);
+
+
+//
+//ARROW FUNCTIONS
+//
+
