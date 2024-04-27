@@ -76,3 +76,17 @@ console.log('Index Course: ', courseIndex);
 //ARROW FUNCTIONS
 //
 
+const course2 = courses.find(function(course) {
+    return course.name === 'a';
+});
+// the arrow function could be write in this way getting the name function off and adding a arrow => after the parameter
+const course3 = courses.find( (course) => {
+    return course.name === 'a';
+});
+
+// this is the cleaner way to write a arrow function
+const course4 = courses.find( course => course.name === 'a');
+
+//
+//REMOVING ELEMENTS
+//
