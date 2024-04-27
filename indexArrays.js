@@ -90,3 +90,29 @@ const course4 = courses.find( course => course.name === 'a');
 //
 //REMOVING ELEMENTS
 //
+
+const numbers2 = [1, 2, 3, 4, 5, 6, 7];
+
+// Remove the last element of an array with pop()
+
+const last = numbers2.pop();
+console.log('Using the method pop: ', last);
+console.log('Now the array numbers2 is: ', numbers2);
+
+// Remove the first element of an array with shift
+const first = numbers2.shift();
+console.log('Using the method shift: ', first);
+console.log('Now the array numbers2 is: ', numbers2);
+
+// Remove an element of the middle with splice
+
+numbers2.splice(2, 1); // the first argument is to choose the index that you want to remove and second one is the quantity you want to remove
+// for example if you put like this (1, 3), meaning that you want to remove 3 elements starting of the second element of the array
+console.log('Using the method splice to remove instead adding: ', numbers2);
+
+
+//
+//EMPTYING AN ARRAY
+//
+
+
