@@ -115,4 +115,28 @@ console.log('Using the method splice to remove instead adding: ', numbers2);
 //EMPTYING AN ARRAY
 //
 
+const numbers3 = [1, 2, 3, 4];
+const numbers4 = [1, 2, 3, 4];
+const numbers5 = [1, 2, 3, 4];
+
+// can truncate the array with lenght 
+numbers3.length = 0;
+console.log(numbers3);
+
+
+// using the splice method, starting by the first element of the 
+console.log(numbers4);
+
+numbers4.splice(0, numbers4.length);
+console.log(numbers4);
+
+// using pop() in a loop it will removing the last element until the array is empty
+
+while (numbers5.length > 0)
+numbers5.pop();
+
+console.log(numbers5);
+
+
+
 
