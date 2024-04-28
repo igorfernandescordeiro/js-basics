@@ -138,5 +138,21 @@ numbers5.pop();
 console.log(numbers5);
 
 
+//
+//COMBINING OR SLICING AN ARRAY
+//
+
+const first1 = [1, 2, 3];
+const second = [4, 5, 6];
+
+const combined = first1.concat(second);
+console.log(combined);
+// here the first argument is the index where you want to start keeping the values in the array and the second argument is the index at which it should be removed from the array from now on.
+const slice = combined.slice(1, 4);
+console.log(slice);
+// if the type is primitive or reference it will be copied what is necessary.
 
 
+//
+//THE SPREAD OPERATOR
+//
