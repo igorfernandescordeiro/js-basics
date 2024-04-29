@@ -156,3 +156,14 @@ console.log(slice);
 //
 //THE SPREAD OPERATOR
 //
+
+const first2 = [1, 2, 3];
+const second1 = [4, 5, 6];
+// using '...array', you spread each element and return then.
+// and it is possible to add how many arrays or variables that you want as the example below.
+
+const combined2 = [...first2, 'a', ...second1];
+
+console.log(combined2);
+
+const copy = [...combined2]; // use this way to copy in a simpler way
