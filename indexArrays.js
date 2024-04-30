@@ -167,3 +167,9 @@ const combined2 = [...first2, 'a', ...second1];
 console.log(combined2);
 
 const copy = [...combined2]; // use this way to copy in a simpler way
+
+
+//
+//ITERATING AN ARRAY
+//
+
