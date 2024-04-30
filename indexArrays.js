@@ -173,3 +173,20 @@ const copy = [...combined2]; // use this way to copy in a simpler way
 //ITERATING AN ARRAY
 //
 
+for (let number of numbers){
+    console.log('Iterating using for of: ', number);
+};
+
+numbers.forEach(function(number){
+    console.log('Iterating using forEach: ', number);
+});
+
+//using arrow function
+
+numbers.forEach((number, index) => {
+    console.log('Iterating using forEach in a arrow function: ', number, ' and its index is: ', index );
+});
+
+//
+//JOINING ARRAYS
+//
