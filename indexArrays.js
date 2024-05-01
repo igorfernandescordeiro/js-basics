@@ -190,3 +190,18 @@ numbers.forEach((number, index) => {
 //
 //JOINING ARRAYS
 //
+
+const numbers6 = [1, 2, 3];
+
+const joined = numbers6.join('-');
+console.log(joined);
+
+const message = 'This is my first message';
+
+const parts = message.split(' ');
+console.log(parts);
+console.log(parts.join('-'));
+
+//
+//SORTING ARRAYS
+//
