@@ -205,3 +205,49 @@ console.log(parts.join('-'));
 //
 //SORTING ARRAYS
 //
+
+const numbers7 = [2, 1, 3];
+numbers7.sort();
+console.log(numbers7);
+
+numbers7.reverse();
+console.log(numbers7);
+
+const courses1 = [
+    {id: 1, name: 'Node.js'},
+    {id: 2, name: 'JavaScript'}
+];
+
+courses1.sort(function(a, b){
+    const nameA = a.name.toUpperCase();
+    const nameB = b.name.toUpperCase();
+    if(nameA < nameB) return -1;
+    if(nameA > nameB) return 1;
+    return 0;
+});
+
+console.log(courses1);
+
+//
+//TESTING THE ELEMENTS IF AN ARRAY
+//
+
+//we have two new methods in JS called every and some
+
+const numbers8 = [1, 2, 3];
+const numbers9 = [1, 2, 3, -1];
+
+//the every() verify if there is one negative number it will return false
+const allPositive = numbers8.every(function(value){
+    return value >= 0;
+});
+// the some() if there is one positive number it will return true
+const atLeastOnePositive = numbers8.some(function(value){
+    return value >= 0;
+});
+console.log(allPositive);
+console.log(atLeastOnePositive);
+
+//
+//FILTERING AN ARRAY
+//
