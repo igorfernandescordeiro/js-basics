@@ -251,3 +251,19 @@ console.log(atLeastOnePositive);
 //
 //FILTERING AN ARRAY
 //
+
+const numbers10 = [1, -1, 2, 3];
+const numbers11 = [1, -1, 2, 3];
+// this filter method could be used to filter depending the condition that you write
+const filtered = numbers10.filter(function(value){
+    return value >= 0
+})
+// other way to write a cleaner code with arrow function is this 
+const filtered1 = numbers11.filter(value => value >= 0);
+
+console.log(filtered);
+console.log(filtered1);
+
+//
+//MAPPING AN ARRAY
+//
