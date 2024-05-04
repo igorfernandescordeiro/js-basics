@@ -300,3 +300,26 @@ console.log(items2);
 //
 //REDUCING AN ARRAY
 //
+
+const numbers15 = [1, -1, 2, 3, 4, 5, 6, -3];
+
+let sum = 0;
+
+for( let n of numbers15){
+    sum += n;
+};
+
+console.log(sum);
+ // this reduce method has two arguments:
+ //       first is a callback function and the second argument is the value of the accumulator that a set as 0
+
+const sum1 = numbers15.reduce((accumulator, currentValue) => {
+    return accumulator + currentValue;
+
+}, 0);
+
+//but it is possible to exclude the second argument so the accumulator starts with the first value of the array
+// and the result still be the same.
+
+console.log(sum1);
+
