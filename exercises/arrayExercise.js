@@ -133,3 +133,17 @@ function except4(array, excluded) {
 console.log('-----------------------------------------------------------')
 console.log('             EXERCISE MOVING AN ELEMENT')
 console.log('-----------------------------------------------------------')
+
+const numbers6 = [1, 2, 3, 4];
+
+const output5 = move (numbers6, 0, 0);
+
+console.log(output5);
+
+// explaning how this function should work. pass an array and chose the index of the number that you want to move
+// and then you pass the offset which is the position that you want to move the number that you chose by the index before
+// use console.error('Invalid offset.'), when choose the off bigger than the length of the array
+
+function move(array, index, offset){
+
+};
