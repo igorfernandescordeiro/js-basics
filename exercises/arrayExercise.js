@@ -146,4 +146,6 @@ console.log(output5);
 
 function move(array, index, offset){
 
+    let numberFromArray = array
+
 };
