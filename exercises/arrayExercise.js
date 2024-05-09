@@ -136,16 +136,33 @@ console.log('-----------------------------------------------------------')
 
 const numbers6 = [1, 2, 3, 4];
 
-const output5 = move (numbers6, 0, 0);
+const output5 = move (numbers6, 0, 3);
 
-console.log(output5);
+console.log('moved array: ', output5);
 
 // explaning how this function should work. pass an array and chose the index of the number that you want to move
 // and then you pass the offset which is the position that you want to move the number that you chose by the index before
 // use console.error('Invalid offset.'), when choose the off bigger than the length of the array
 
 function move(array, index, offset){
+    const position = index + offset;
 
-    let numberFromArray = array
-
+    if (position >= array.length || position < 0){
+        console.error('Invalid offset.');
+        return;
+    }
+    let newArray = [...array];
+    //this remove the element but return its value
+    let numberFromArray = newArray.splice(index, 1)[0];
+    
+    newArray.splice(position, 0, numberFromArray);
+    return newArray;
+    
 };
+
+//
+//EEXERCISE COUNT OCCURENCES
+//
+console.log('-----------------------------------------------------------')
+console.log('             EXERCISE COUNT OCCURENCES')
+console.log('-----------------------------------------------------------')
