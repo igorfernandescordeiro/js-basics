@@ -136,7 +136,7 @@ console.log('-----------------------------------------------------------')
 
 const numbers6 = [1, 2, 3, 4];
 
-const output5 = move (numbers6, 0, 3);
+const output5 = move(numbers6, 0, 3);
 
 console.log('moved array: ', output5);
 
@@ -144,25 +144,63 @@ console.log('moved array: ', output5);
 // and then you pass the offset which is the position that you want to move the number that you chose by the index before
 // use console.error('Invalid offset.'), when choose the off bigger than the length of the array
 
-function move(array, index, offset){
+function move(array, index, offset) {
     const position = index + offset;
 
-    if (position >= array.length || position < 0){
+    if (position >= array.length || position < 0) {
         console.error('Invalid offset.');
         return;
     }
     let newArray = [...array];
     //this remove the element but return its value
     let numberFromArray = newArray.splice(index, 1)[0];
-    
+
     newArray.splice(position, 0, numberFromArray);
     return newArray;
-    
+
 };
 
 //
-//EEXERCISE COUNT OCCURENCES
+//EXERCISE COUNT OCCURENCES
 //
 console.log('-----------------------------------------------------------')
 console.log('             EXERCISE COUNT OCCURENCES')
+console.log('-----------------------------------------------------------')
+
+const numbers7 = [1, 2, 3, 4, 1, 4, 4];
+
+const count = countOccurrences(numbers7, 1);
+const count2 = countOccurrences2(numbers7, 1);
+
+console.log('Count Ocurrences function: ' + count);
+console.log('SECOND Count Ocurrences function: ' + count2);
+
+// this function should return the numbers of times that this searchElement appears in this array
+
+function countOccurrences(array, searchElement) {
+    // the reduce method return the accumulate as I set, but the function should return this result too
+    // so the reduce return should be placed in a const to be returned
+    const result = array.reduce((accumutale, currentValue) => {
+        if (currentValue === searchElement) {
+            return accumutale + 1;
+        } else {
+            return accumutale;
+        }
+    }, 0);
+    return result;
+};
+
+
+function countOccurrences2(array, searchElement) {
+    return array.reduce((accumutale, current) => {
+        return (current === searchElement) ? accumutale + 1 : accumutale
+    }, 0);
+};
+
+
+//
+//EXERCISE GET MAX
+//
+console.log('-----------------------------------------------------------')
+console.log('             EXERCISE GET MAX')
 console.log('-----------------------------------------------------------')
