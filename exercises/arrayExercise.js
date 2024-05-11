@@ -204,3 +204,56 @@ function countOccurrences2(array, searchElement) {
 console.log('-----------------------------------------------------------')
 console.log('             EXERCISE GET MAX')
 console.log('-----------------------------------------------------------')
+
+// to help to think, every time that has an array of values and you need just a single value as the result...
+//... think to use the reduce() method
+
+
+const numbers8 = [1, 4, 3, 2];
+
+const max = getMax(numbers8);
+const max1 = getMax2(numbers8);
+const max2 = getMax3(numbers8);
+
+console.log(max);
+console.log(max1);
+console.log(max2);
+
+function getMax(array){
+    let num = 0;
+
+    array.forEach(number =>{
+        if (number > num ){
+            num = number;
+        }
+    });
+    return num;
+
+};
+
+function getMax2(array){
+    if (array.length === 0) return undefined;
+    
+    return array.reduce((accumutale, current) => {
+        return (current > accumutale) ? current : accumutale;
+
+    });
+};
+
+function getMax3(array){
+    if (array.length === 0) return undefined;
+    let max = array[0];
+
+    for (let i = 1; i < array.length; i++)
+        if(array[i] > max)
+            max = array[i];
+
+    return max;
+};
+
+//
+//EXERCISE MOVIES
+//
+console.log('-----------------------------------------------------------')
+console.log('             EXERCISE MOVIES')
+console.log('-----------------------------------------------------------')
