@@ -257,3 +257,57 @@ function getMax3(array){
 console.log('-----------------------------------------------------------')
 console.log('             EXERCISE MOVIES')
 console.log('-----------------------------------------------------------')
+
+const movies = [
+    {title: 'a', year: 2018, rating: 4.5},
+    {title: 'b', year: 2018, rating: 3},
+    {title: 'c', year: 2018, rating: 3.9},
+    {title: 'd', year: 2018, rating: 4.6},
+    {title: 'e', year: 2017, rating: 4.7},
+];
+
+const movies2 = [
+    {title: 'a', year: 2018, rating: 4.5},
+    {title: 'b', year: 2018, rating: 3},
+    {title: 'c', year: 2018, rating: 3.9},
+    {title: 'd', year: 2018, rating: 4.6},
+    {title: 'e', year: 2017, rating: 4.7},
+];
+
+
+
+// all the movies in 2018 with rating >= 4
+// sort them by thier rating
+// descending order 
+// pick thier title propertie and displey on the console
+console.log(bestRating(movies));
+
+function bestRating(obj){
+    let best = [];
+    for (const key in obj) {
+        if (obj[key].year === 2018 && obj[key].rating >= 4){
+            best.push(obj[key]);   
+        }
+    };
+    best.sort((a, b) => {
+        if (a.rating < b.rating) {
+            return 1;
+        } else if (a.rating > b.rating) {
+            return -1; 
+        } else {
+            return 0; 
+        }
+    });
+    best.forEach((movie)=>{
+        console.log(movie.title);
+    });
+};
+
+
+const titles = movies2
+.filter(m => m.year === 2018 && m.rating >= 4)
+.sort((a, b) => a.rating - b.rating)
+.reverse()
+.map(m => m.title);
+
+console.log(titles);
