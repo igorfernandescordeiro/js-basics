@@ -13,3 +13,9 @@ let move = run;
 run();
 move();
 walk();
+
+// the main difference between them is that Function Declaration can be called before the function itself
+// and the Function Expression can not
+
+//When the JavaScript engine runs the code, it moves all the function declarations to the top. 
+//this is called Hoisting, but this is done automatically by the JS. 
