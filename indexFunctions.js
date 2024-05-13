@@ -40,3 +40,9 @@ console.log(sum1(1,2,2,2));
 
 // Arguments is a special object that all the functions has in JavaScript
 
+function sum2(discount, ...prices) { // this three dots is called rest operator
+    const total = prices.reduce((a, b) => a + b);
+    return total * (1 - discount);
+};
+
+console.log(sum2(0.1,2,2,2));
