@@ -1,4 +1,5 @@
 // This is a Function Declaration
+
 function walk () {
     console.log('walk');
 };
@@ -6,7 +7,7 @@ function walk () {
 
 // There is other way to defining a function and that is using Function Expression
 // function () without a name is an Anonymous Function Expression
-let run = function() {
+let run = () => {
     console.log('run');
 };
 let move = run;
