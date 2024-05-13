@@ -44,5 +44,5 @@ function sum2(discount, ...prices) { // this three dots is called rest operator
     const total = prices.reduce((a, b) => a + b);
     return total * (1 - discount);
 };
-
+ // the rest operator should be the last parameter
 console.log(sum2(0.1,2,2,2));
