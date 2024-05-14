@@ -46,3 +46,25 @@ function sum2(discount, ...prices) { // this three dots is called rest operator
 };
  // the rest operator should be the last parameter
 console.log(sum2(0.1,2,2,2));
+
+
+
+// DEFAULT PARAMETERS
+
+function interest (principal, rate, years) {
+    rate = rate || 3.5; // this is a way to set a default values to the parameters
+    years = years || 5;
+
+
+    return principal * rate / 100 * years;
+}
+
+console.log(interest(10000));
+
+//new way to set default value 
+// but this is tricky, if you set a default value to a parameter, all the parameters after this one should have default values
+function interest2 (principal, rate = 3.5, years = 5) {
+    return principal * rate / 100 * years;
+}
+
+console.log(interest2(10000));
