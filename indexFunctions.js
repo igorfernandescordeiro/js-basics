@@ -68,3 +68,43 @@ function interest2 (principal, rate = 3.5, years = 5) {
 }
 
 console.log(interest2(10000));
+
+
+const person = {
+    firstName: 'Igor',
+    lastName: 'Cordeiro',
+    get fullName() {
+        return `${person.firstName} ${person.lastName}`
+    },
+    set fullName(value) {
+        const parts = value.split(' ')
+        this.firstName = parts[0];
+        this.lastName = parts[1]
+
+    }
+};
+
+// this example is too add in the lastname more than one name
+const person1 = {
+    firstName: 'Igor',
+    lastName: 'Cordeiro',
+    get fullName() {
+        return `${this.firstName} ${this.lastName}`
+    },
+    set fullName(value) {
+        const parts = value.split(' ');
+        this.firstName = parts[0];
+        (parts.length > 2) ? this.lastName = parts.slice(1).join(' ') : this.lastName = parts[1];
+        
+    }
+};
+
+person.fullName = 'Igor Cadeira Cordeiro Fernandes Cordeiro Fernandes';
+person1.fullName = 'Igor Cadeira Cordeiro Fernandes Cordeiro Fernandes';
+
+
+// getters => access properties
+// setters => change (mutate) them
+
+console.log(person);
+console.log(person1);
