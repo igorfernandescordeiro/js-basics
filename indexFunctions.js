@@ -138,3 +138,20 @@ catch (e) {
 }
 
 console.log('just a log after the error.');
+
+
+// now we are going to see about Scope.... local and global
+
+const color = 'red';
+
+function start() {
+    const message = 'hi';
+    const color = 'blue';
+    console.log(color);
+}
+
+function stop() {
+    const message = 'bye';
+}
+
+start();
