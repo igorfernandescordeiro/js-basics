@@ -155,3 +155,26 @@ function stop() {
 }
 
 start();
+
+// now it is about the 'var' keyword
+
+// when use var to declare a variable that is visible to the entire function and it is called function-scoped
+
+function start1() { 
+    for (var i = 0; i < 5; i++){
+        console.log(i);
+        if (true) {
+            var color = 'red';
+        }
+    }
+    console.log(color);
+};
+
+// in this case when use 'var' outside of a function, this creates a global variable 
+// and attaches that global variable to the window object in browser
+var color1 = 'green';
+let age = 30;
+
+//For the best practices, avoid using the var keyword, because it creates variables that are functions scopes not block scope
+
+start1();
