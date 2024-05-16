@@ -108,3 +108,33 @@ person1.fullName = 'Igor Cadeira Cordeiro Fernandes Cordeiro Fernandes';
 
 console.log(person);
 console.log(person1);
+
+
+// try and catch it could be called Defensive programming
+
+
+const person2 = {
+    firstName: 'Igor',
+    lastName: 'Cordeiro',
+    get fullName() {
+        return `${person.firstName} ${person.lastName}`
+    },
+    set fullName(value) {
+        if (typeof value !== 'string')
+            throw new Error('Value is not a string.');
+        const parts = value.split(' ')
+        if (parts.length !== 2)
+            throw new Error('Enter a frist and last name.');
+        this.firstName = parts[0];
+        this.lastName = parts[1]
+
+    }
+};
+try {
+    person2.fullName = '';
+}
+catch (e) {
+    console.log(e);
+}
+
+console.log('just a log after the error.');
