@@ -178,3 +178,45 @@ let age = 30;
 //For the best practices, avoid using the var keyword, because it creates variables that are functions scopes not block scope
 
 start1();
+
+
+// This keyword in JavaScript
+
+// 'This' references the object that is executing the current function
+
+const video = {
+    title: 'a',
+    play() {
+        console.log(this);
+    }
+};
+
+video.stop = function () {
+    console.log(this);
+};
+
+video.stop();
+
+function Video(title) {
+    this.title = title;
+    console.log(this);
+};
+
+const v = new Video('b');
+
+const video1 = {
+    title: 'a',
+    tags: ['a', 'b', 'c'],
+    showTags() {
+        this.tags.forEach(function(tag) {
+            console.log(this.title, tag);
+        }, this)
+    }
+};
+
+console.log('-------------------------------');
+
+video1.showTags();
+
+// more about THIS
+
