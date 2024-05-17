@@ -225,3 +225,58 @@ video1.showTags();
 
 // more about THIS
 
+const video2 = {
+    title: 'a',
+    tags: ['a', 'b', 'c'],
+    showTags() {
+        const self = this;
+        this.tags.forEach(function(tag) {
+            console.log(self.title, tag);
+        })
+    }
+};
+
+console.log(video2.showTags())
+
+console.log('-------------------------------');
+console.log('-------------------------------');
+console.log('-------------------------------');
+
+function playVideo(a, b){
+    console.log(this);
+};
+playVideo.call({ name: 'igor' }, 1, 2);
+playVideo.apply({ name: 'igor' }, [1, 2]);
+playVideo.bind({ name: 'igor' })();
+console.log('-------------------------------');
+console.log('-------------------------------');
+console.log('-------------------------------');
+
+const video3 = {
+    title: 'a',
+    tags: ['a', 'b', 'c'],
+    showTags() {
+        this.tags.forEach(function(tag) {
+            console.log(this.title, tag);
+        }.bind(this));
+    }
+};
+
+console.log(video3.showTags());
+
+console.log('-------------------------------');
+console.log('-------------------------------');
+console.log('-------------------------------');
+
+// here we can see that if we use arrow functions which inherit 'this' from the object itself that it has been created
+const video4 = {
+    title: 'a',
+    tags: ['a', 'b', 'c'],
+    showTags() {
+        this.tags.forEach((tag) => {
+            console.log(this.title, tag);
+        });
+    }
+};
+
+console.log(video4.showTags())
