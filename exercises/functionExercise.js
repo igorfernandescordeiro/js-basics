@@ -27,3 +27,20 @@ console.log(sum([1,2,3]));
 console.log('-----------------------------------------------------------')
 console.log('             EXERCISE AREA OF CIRCLE')
 console.log('-----------------------------------------------------------')
+
+const circle = {
+   radius: 1,
+   get area() {
+      return Math.PI * this.radius * this.radius;
+   }
+};
+circle.radius = 2;
+console.log(circle.area);
+
+
+//
+//EXERCISE ERROR HANDLING
+//
+console.log('-----------------------------------------------------------')
+console.log('             EXERCISE ERROR HANDLING')
+console.log('-----------------------------------------------------------')
