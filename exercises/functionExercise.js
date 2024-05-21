@@ -44,3 +44,22 @@ console.log(circle.area);
 console.log('-----------------------------------------------------------')
 console.log('             EXERCISE ERROR HANDLING')
 console.log('-----------------------------------------------------------')
+
+try {
+   const numbers = [1, 2, 3, 4, 1, 4, 4];
+   const count = countOccurrences(null, 1);
+   console.log('Count Ocurrences function: ' + count);
+}
+catch(e) {
+   console.log(e.message);
+}
+
+
+
+function countOccurrences(array, searchElement) {
+   if (Array.isArray(array)) {
+      return array.reduce((accumutale, current) => {
+         return (current === searchElement) ? accumutale + 1 : accumutale
+     }, 0);
+   } throw new Error('An array is missing');
+};
